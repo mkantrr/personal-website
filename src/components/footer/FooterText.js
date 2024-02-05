@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Link } from '@material-ui/core';
 import { TextDecrypt } from '../content/TextDecrypt';
-import { HeartIcon } from '../content/SponsorButton';
+import { BusinessCard } from '../content/BusCardButton';
 
 const useStyles = makeStyles((theme) => ({
   footerText: {
@@ -26,14 +26,15 @@ export const FooterText = () => {
     <Link
       color='inherit'
       underline='none'
-      href='https://github.com/sponsors/JoHoop'
+      href='https://dot.cards/matutu'
       target='_blank'
       rel='noopener noreferrer'
       className={classes.footerText}
     >
-      <HeartIcon />
-      <Typography variant='body1'>
-        <TextDecrypt text={' Sponsor'} />
+      <BusinessCard />
+      <div>&nbsp;&nbsp;&nbsp;</div>
+      <Typography variant='h6'>
+        <TextDecrypt text={'</> Business Card'} />
       </Typography>
     </Link>
   );

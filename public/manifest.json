@@ -1,6 +1,6 @@
 {
-    "name": "Jo Lienhoop | Bremen, Germany",
-    "short_name": "jolienhoop.com",
+    "name": "Matthew Kanter",
+    "short_name": "matutu.dev",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#00bfbf",
-    "background_color": "#171c28"
+    "theme_color": "#ce41f9",
+    "background_color": "#281728"
 }
