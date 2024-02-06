@@ -29,7 +29,7 @@ import { ThemeContext } from "../theme/ThemeProvider";
 
 const DisplacementSphere = (props) => {
     const { theme } = useContext(ThemeContext);
-    const rgbBackground = theme === "light" ? "250 250 250" : "30 30 30";
+    const rgbBackground = theme === "light" ? "250 250 250" : "60 60 60";
     const width = useRef(window.innerWidth);
     const height = useRef(window.innerHeight);
     const start = useRef(Date.now());
