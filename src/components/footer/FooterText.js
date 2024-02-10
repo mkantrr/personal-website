@@ -33,8 +33,8 @@ export const FooterText = () => {
     >
       <BusinessCard />
       <div>&nbsp;&nbsp;&nbsp;</div>
-      <Typography variant='h6'>
-        <TextDecrypt text={'</> Business Card'} />
+      <Typography variant='subtitle2'>
+        <TextDecrypt text={'Business Card'} />
       </Typography>
     </Link>
   );

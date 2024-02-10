@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-export const Portfolio = () => {
+export const Career = () => {
   const classes = useStyles();
 
   return (

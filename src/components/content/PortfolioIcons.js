@@ -97,11 +97,6 @@ export const PortfolioIcons = () => {
       underline='none'
       color='inherit'
     >
-      <Tooltip
-        title='Portfolio'
-        placement='left'
-        TransitionComponent={Zoom}
-      >
         <IconButton
           color='inherit'
           aria-label='Portfolio'
@@ -109,7 +104,6 @@ export const PortfolioIcons = () => {
         >
           <i className={`${classes.icon} fas fa-folder-open`}></i>
         </IconButton>
-      </Tooltip>
     </Link>
     <Link
       href='https://github.com/mkantrr'
