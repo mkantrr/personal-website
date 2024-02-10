@@ -41,20 +41,70 @@ export const SpeedDials = () => {
         />
     ));
 
+    const portfolioActionIcons = Resume.basics.menuIcons.map((action) => (
+        <SpeedDialAction
+            key={action.network.toLowerCase()}
+            icon={<i className={`${action.x_icon} ${classes.iconColor}`}></i>}
+            tooltipTitle={action.network}
+            onClick={handleClose}
+            href={action.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="none"
+            color="inherit"
+        />
+    ));
+
     return (
         <>
-            <SpeedDial
-                ariaLabel="SpeedDial"
-                className={classes.speedDial}
-                hidden={false}
-                icon={<SpeedDialIcon />}
-                onClose={handleClose}
-                onOpen={handleOpen}
-                open={open}
-                direction="down"
-            >
-                {actionIcons}
-            </SpeedDial>
+            {window.location.pathname === '/portfolio' && (
+                <SpeedDial
+                    ariaLabel="SpeedDial"
+                    className={classes.speedDial}
+                    hidden={false}
+                    icon={<SpeedDialIcon />}
+                    onClose={handleClose}
+                    onOpen={handleOpen}
+                    open={open}
+                    direction="down"
+                >
+                    <SpeedDialAction
+                        key='portfolio'
+                        icon={<i className={`fas fa-folder-open ${classes.iconColor}`}></i>}
+                        tooltipTitle='Portfolio'
+                        onClick={handleClose}
+                        href='/portfolio'
+                        rel="noopener noreferrer"
+                        underline="none"
+                        color="inherit"
+                    />
+                    {portfolioActionIcons}
+                </SpeedDial>
+            )}
+            {window.location.pathname !== '/portfolio' && (
+                <SpeedDial
+                    ariaLabel="SpeedDial"
+                    className={classes.speedDial}
+                    hidden={false}
+                    icon={<SpeedDialIcon />}
+                    onClose={handleClose}
+                    onOpen={handleOpen}
+                    open={open}
+                    direction="down"
+                >
+                    <SpeedDialAction
+                        key='portfolio'
+                        icon={<i className={`fas fa-folder-open ${classes.iconColor}`}></i>}
+                        tooltipTitle='Portfolio'
+                        onClick={handleClose}
+                        href='/portfolio'
+                        rel="noopener noreferrer"
+                        underline="none"
+                        color="inherit"
+                    />
+                    {actionIcons}
+                </SpeedDial>
+            )}
         </>
     );
 };

@@ -48,5 +48,30 @@ export const SocialIcons = () => {
     </Link>
   ));
 
-  return <div className={classes.socialIcons}>{socialItems}</div>;
+  return (
+    <div className={classes.socialIcons}>
+      <Link
+        href='/portfolio'
+        key='portfolio'
+        rel='noopener noreferrer'
+        underline='none'
+        color='inherit'
+      >
+        <Tooltip
+          title='Portfolio'
+          placement='left'
+          TransitionComponent={Zoom}
+        >
+          <IconButton
+            color='inherit'
+            aria-label='Portfolio'
+            className={classes.iconButton}
+          >
+            <i className={`${classes.icon} fas fa-folder-open`}></i>
+          </IconButton>
+        </Tooltip>
+      </Link>
+      {socialItems}
+    </div>
+  );
 };

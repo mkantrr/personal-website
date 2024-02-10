@@ -7,6 +7,7 @@ import { CssBaseline } from "@material-ui/core";
 import { logCredits } from "../utils/logCredits";
 
 import { Home } from "../pages/Home";
+import { Portfolio } from "../pages/Portfolio"
 import { PageNotFound } from "../pages/PageNotFound";
 
 export const App = () => {
@@ -23,7 +24,8 @@ export const App = () => {
                         window.location.href = "https://github.com/mkantrr";
                         return null;
                     }} />
-                    <Route path="*" component={PageNotFound} />
+                    <Route path="/portfolio" component={Portfolio} />
+                    <Route component={PageNotFound} />
                 </Switch>
             </Router>
         </ThemeProvider>
