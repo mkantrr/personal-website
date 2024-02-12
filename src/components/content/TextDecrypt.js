@@ -3,6 +3,7 @@ import { useDencrypt } from "use-dencrypt-effect";
 
 const decryptOptions = {
     chars: [
+        "_",
         "-",
         ".",
         "/",

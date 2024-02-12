@@ -64,7 +64,7 @@ export const PortfolioIcons = () => {
 
 
   return (
-    <div>
+    <>
     <div className={classes.menuIcons}>
       {menuItems}
       <Link
@@ -84,7 +84,7 @@ export const PortfolioIcons = () => {
             aria-label='Portfolio'
             className={classes.iconButton}
           >
-            <i className={`${classes.icon} fas fa-folder-open`}></i>
+            <i className={`${classes.icon} fas fa-folder`}></i>
           </IconButton>
         </Tooltip>
       </Link>
@@ -102,7 +102,7 @@ export const PortfolioIcons = () => {
           aria-label='Portfolio'
           className={classes.iconButton}
         >
-          <i className={`${classes.icon} fas fa-folder-open`}></i>
+          <i className={`${classes.icon} fas fa-folder`}></i>
         </IconButton>
     </Link>
     <Link
@@ -127,8 +127,7 @@ export const PortfolioIcons = () => {
         </IconButton>
       </Tooltip>
     </Link>
-
   </div>
-  </div>
+  </>
   );
 };
