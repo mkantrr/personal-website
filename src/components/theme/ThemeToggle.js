@@ -6,7 +6,7 @@ import { Brightness4, Brightness7 } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     iconButton: {
-        position: "absolute",
+        position: "fixed",
         bottom: theme.spacing(6),
         right: theme.spacing(6),
         height: "2.5rem",
@@ -23,14 +23,14 @@ export const ThemeToggle = () => {
 
     return (
         <Tooltip
-            title={"Toggle theme"}
+            title={"Toggle Theme"}
             placement="right"
             TransitionComponent={Zoom}
         >
             <IconButton
                 color="inherit"
                 onClick={toggleTheme}
-                aria-label={"Toggle theme"}
+                aria-label={"Toggle Theme"}
                 className={classes.iconButton}
             >
                 {theme === "light" ? (
