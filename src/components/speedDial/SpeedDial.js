@@ -48,7 +48,6 @@ export const SpeedDials = () => {
             tooltipTitle={action.network}
             onClick={handleClose}
             href={action.url}
-            target="_blank"
             rel="noopener noreferrer"
             underline="none"
             color="inherit"
