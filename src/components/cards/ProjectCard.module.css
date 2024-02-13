@@ -5,13 +5,13 @@
 }
 
 .imgContainer {
-  width: 60%;
+  width: 40%;
   overflow: hidden;
   height: 100%;
 }
 
 .notImgContainer {
-  width: 40%;
+  width: 60%;
 }
 
 .notImgContainer .content {

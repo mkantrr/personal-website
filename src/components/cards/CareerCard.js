@@ -1,7 +1,6 @@
 import React from "react";
 import Markdown from "react-markdown";
 import { Typography } from "@material-ui/core";
-import { TextDecrypt } from "../content/TextDecrypt";
 import CardWrapper from "./CardWrapper";
 import LRText from "./LRText";
 import ImageDisplay from "./ImageDisplay";

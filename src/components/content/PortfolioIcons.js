@@ -115,7 +115,7 @@ export const PortfolioIcons = () => {
     >
       <Tooltip
         title='mkantrr'
-        placement='left'
+        placement='bottom'
         TransitionComponent={Zoom}
       >
         <IconButton
