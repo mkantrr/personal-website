@@ -28,14 +28,6 @@
     margin: 0px 20px;
 }
 
-.content > p {
+.content > p > a {
     color: var(--grey)
-}
-
-a {
-    color: #8f569d;
-}
-
-a:hover {
-    color: #ce41f9;
 }

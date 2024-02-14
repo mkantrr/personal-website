@@ -6,7 +6,6 @@ import { TextDecrypt } from "./TextDecrypt";
 import CardWrapper from "../cards/CardWrapper";
 import ImageDisplay from "../cards/ImageDisplay";
 import Resume from "../../settings/resume.json";
-import style from "./citations.css";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -44,7 +43,7 @@ export const Citations = () => {
             <Markdown>{`${Resume.credits.description}`}</Markdown>
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            <Markdown className={style.markdown}>
+            <Markdown>
               {`${Resume.credits.special_thanks}`}
             </Markdown>
           </Typography>
