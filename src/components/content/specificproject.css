@@ -1,0 +1,15 @@
+.cHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.mHolder {
+  margin: 20px 0px 0px 0px;
+}
+
+.title {
+  word-wrap: normal;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Hidden } from '@material-ui/core';
 import DisplacementSphere from '../components/background/DisplacementSphere';
-import { WelcomePage } from '../components/content/Welcome';
+import { Citations } from '../components/content/Citations';
 import { LogoLink } from '../components/logo/LogoLink';
 import { ThemeToggle } from '../components/theme/ThemeToggle';
 import { FooterText } from '../components/footer/FooterText';
@@ -25,7 +25,7 @@ export const Credits = () => {
       <div className={classes.root}>
         <DisplacementSphere />
         <LogoLink />
-        <WelcomePage />
+        <Citations />
         <ThemeToggle />
         <Hidden smDown>
          <PortfolioIcons /> 

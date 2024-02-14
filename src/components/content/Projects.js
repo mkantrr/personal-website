@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rightSide: {
     marginTop: "14vh",
-    marginLeft: "-40vw",
+    marginLeft: "-36vw",
     "@media (max-width: 768px)": {
       marginLeft: theme.spacing(4),
     },
@@ -59,7 +59,15 @@ function create_section() {
     var currentProject = value;
     projs.push(
       <div key={key} className={style.spacer}>
-        <ProjectCard width="675px" pName={key} data={currentProject} />
+        <Link
+          href={`/portfolio/projects/${key}`}
+          key={key}
+          rel='noopener noreferrer'
+          underline='none'
+          color='inherit'
+        >
+          <ProjectCard width="40.5vw" height="38vh" pName={key} data={currentProject} />
+        </Link>
       </div>
     );
     

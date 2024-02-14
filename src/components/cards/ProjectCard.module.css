@@ -33,10 +33,14 @@
 .title {
   grid-area: title;
   margin: 0px;
+  word-wrap: break-word;
 }
 
 .footer {
-  grid-area: footer;
+  display: flex;
+  position: relative;
+  top: 3vh;
+  justify-content: right;
 }
 
 .lr {

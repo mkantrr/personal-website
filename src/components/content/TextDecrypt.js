@@ -77,11 +77,20 @@ export const TextDecrypt = (props) => {
 
         return () => clearTimeout(action);
     }, [dencrypt, props.text]);
-
-    return (
-        <p>
-            {result}
-            {" "}
-        </p>
-    );
+    if (!props.space) {
+        return (
+            <p>
+                {result}
+                {" "}
+            </p>
+        );
+    } else {
+        return (
+            <p>
+                &nbsp;
+                {result}
+                {" "}
+            </p>
+        )
+    }
 };

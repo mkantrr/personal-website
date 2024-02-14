@@ -16,7 +16,7 @@ const ImageDisplay = (props) => {
   }
 
   let caption = null;
-  if (imgs[ind].caption) {
+  if (props.caption && imgs[ind].caption) {
     caption = (
       <div className={style.captionHolder}>
         <CardWrapper hover="none">

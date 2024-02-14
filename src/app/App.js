@@ -12,7 +12,7 @@ import { Career } from "../pages/Career";
 import { Projects } from "../pages/Projects";
 import { Credits } from "../pages/Credits";
 import { PageNotFound } from "../pages/PageNotFound";
-import { ProjectPage } from "../pages/ProjectPage"
+import { ProjectPage } from "../pages/ProjectPage";
 
 export const App = () => {
     logCredits();
@@ -23,7 +23,7 @@ export const App = () => {
             <Router>
                 <HelmetMeta />
                 <Switch>
-                    <Route path='/portfolio/projects/:projectId' component={<div><ProjectPage /></div>} />
+                    <Route path='/portfolio/projects/:projectId' component={ProjectPage} />
                     <Route path='/portfolio/career' component={Career} />
                     <Route path='/portfolio/projects' component={Projects} />
                     <Route path='/portfolio/credits' component={Credits} />

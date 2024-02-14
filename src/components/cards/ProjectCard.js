@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ProjectCard.module.css";
+import Markdown from "react-markdown";
 import { Typography, Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
-import { TextDecrypt } from "../content/TextDecrypt";
 import { makeStyles } from "@material-ui/core/styles";
 import ImageDisplay from "./ImageDisplay";
 import LRText from "./LRText";
@@ -47,21 +47,26 @@ const ProjectCard = (props) => {
             </div>
             <div className="hideScroll" style={{ width: "100%", overflow: "auto" }}>
               <Typography variant="h6" component="h1" className={style.title}>
-                <TextDecrypt text={projectData.title} />
+                {projectData.title}
               </Typography>
             </div>
-            <div className={style.main}>{projectData.tagline ? projectData.tagline : (projectData.summary.split(".")[0] + ".")}</div>
+            <div className={style.main}>
+              <Markdown>
+                {projectData.tagline ? projectData.tagline : (projectData.summary.split(".")[0] + ".")}
+              </Markdown>
+            </div>
             <div className={style.footer}>
               <Link
-                href={`/projects/${props.pName}`}
-                key={`${props.pName}`}
+                href={projectData.url}
+                target="_blank"
+                key={props.pName}
                 rel='noopener noreferrer'
                 underline='none'
                 color='inherit'
               >
                 <Tooltip
                   title={"View More"}
-                  placement="right"
+                  placement="left"
                   TransitionComponent={Zoom}
                 >
                   <IconButton

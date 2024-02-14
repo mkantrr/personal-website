@@ -1,10 +1,12 @@
 import React from "react";
+import Markdown from "react-markdown";
 import { Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import CardWrapper from "../cards/CardWrapper";
 import ImageDisplay from "../cards/ImageDisplay";
 import Resume from "../../settings/resume.json";
+import style from "./citations.css";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -27,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const WelcomePage = () => {
+export const Citations = () => {
     const classes = useStyles();
    
     
@@ -36,15 +38,20 @@ export const WelcomePage = () => {
       <div className={`${classes.flex}`}>
         <Container component="main" className={`${classes.main}`} maxWidth="sm">
           <Typography variant="h2" component="h1" gutterBottom>
-            <TextDecrypt text="Welcome!" />
+            <TextDecrypt text="Credits" />
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            {`${Resume.about.description}`}
+            <Markdown>{`${Resume.credits.description}`}</Markdown>
+          </Typography>
+          <Typography variant="h6" component="h2" gutterBottom>
+            <Markdown className={style.markdown}>
+              {`${Resume.credits.special_thanks}`}
+            </Markdown>
           </Typography>
         </Container>
         <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
-          <CardWrapper width="36.5vw" height="68vh">
-            <ImageDisplay caption={true} imgs={Resume.about.images} />
+          <CardWrapper hover="none" width="36.5vw" height="68vh">
+            <ImageDisplay imgs={Resume.credits.images} />
           </CardWrapper>
         </Container>
       </div>
