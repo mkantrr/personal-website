@@ -34,7 +34,18 @@ export const App = () => {
                         window.location.href = "https://github.com/mkantrr";
                         return null;
                     }} />
-
+                    <Route path="/linkedin" component={() =>{
+                        window.location.href = "https://linkedin.com/in/mkanter124";
+                        return null;
+                    }} />
+                    <Route path="/resume" component={() =>{
+                        window.location.href = "/resume.pdf";
+                        return null;
+                    }} />
+                    <Route path="/email" component={() =>{
+                        window.location.href = "mailto:matt@matutu.dev";
+                        return null;
+                    }} />
                     <Route path="/*" component={PageNotFound} />
                 </Switch>
             </Router>
