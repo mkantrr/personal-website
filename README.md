@@ -2,7 +2,7 @@
 
 [![Screenshot](/public/social-image.png?raw=true)](https://matutu.dev)
 
-[![Website jolienhoop.com](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://matutu.dev)
+[![Website matutu.dev](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://matutu.dev)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mkantrr/personal-website/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/mkantrr/personal-website/graphs/commit-activity)
 
@@ -11,13 +11,13 @@ My personal website source code. View it at [matutu.dev](https://matutu.dev)
 -   built using [React](https://reactjs.org/)
 -   bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 -   styled with [Material-UI](https://material-ui.com/)
--   deployed with [Vercel](https://vercel.com) and hosted at [matutu.dev](https://matutu.dev)
+-   hosted at [matutu.dev](https://matutu.dev)
 
-Kudos to [Cody Bennett](https://github.com/CodyJasonBennett), [José Coelho](https://github.com/jcoelho93) and [Brittany Chiang](https://github.com/bchiang7) for the inspiration. And of course [JoHoop](https://github.com/JoHoop) for the starting point template.
+Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [JoHoop](https://github.com/JoHoop) for the inspiration. And of course [Eric Knocklein](https://github.com/EricKnocklein/) for his generous help with resuable card components.
 
 ## Features
 
--   All of the personal information is populated from the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file following the [JSON Resume](https://jsonresume.org/) standard, a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/).
+-   Most, if not all of the personal information is populated from the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file following the [JSON Resume](https://jsonresume.org/) standard (to a point), a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/).
 -   The toggle/switch for the dark mode syncs its state to the local storage.
 
 ## Customization
