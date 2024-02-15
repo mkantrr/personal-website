@@ -43,7 +43,7 @@ const ProjectCard = (props) => {
         <div className={style.notImgContainer}>
           <div className={style.content}>
             <div className={style.lr}>
-              <LRText leftText={projectData.dates} />
+              <LRText decrypt={true} leftText={projectData.dates} />
             </div>
             <div className="hideScroll" style={{ width: "100%", overflow: "auto" }}>
               <Typography variant="h6" component="h1" className={style.title}>

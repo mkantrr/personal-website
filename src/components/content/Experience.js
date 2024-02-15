@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typography, Container, Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
@@ -64,7 +64,7 @@ function create_section(data, name) {
 
   return (
     <div key={name}>
-      <div className={style.catHolder + " " + style.fade}
+      <div id={name.toLowerCase()} className={style.catHolder + " " + style.fade}
            style={{position: "sticky", top: "0", zIndex: "999"}}>
         <CardWrapper width="98.2%" blur="none">
           <div style={{
@@ -92,6 +92,17 @@ for (const [key, value] of Object.entries(Resume.career.sections)) {
 
 export const CareerPage = () => {
   const classes = useStyles();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    const href = window.location.href.substring(
+      window.location.href.lastIndexOf('#') + 1,
+    );
+    if (window.location.href.lastIndexOf('#') > 0) {
+      document.getElementById(href)?.scrollIntoView();
+    }
+   });
 
 
   return (

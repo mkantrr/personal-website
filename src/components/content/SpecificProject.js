@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   rightSide: {
+    wordWrap: "normal",
     marginTop: "15vh",
     marginLeft: "-12vw",
     "@media (max-width: 768px)": {
@@ -55,6 +56,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-1vh"
   },
   text: {
+    position: "fixed",
+    wordWrap: "break-word",
+    width: "45vw",
+    height: "52vh",
+    overflow: "auto",
     marginLeft: "0.5vw"
   }
 }));
@@ -76,28 +82,28 @@ export const SpecificProjectPage = () => {
     nav = (
       <div className={style.mHolder}>
         <div className={style.cHolder}>
-            <Link
-              href={projectData.url}
-              key={projectId}
-              target="_blank"
-              rel='noopener noreferrer'
-              underline='none'
-              color='inherit'
+          <Link
+            href={projectData.url}
+            key={projectId}
+            target="_blank"
+            rel='noopener noreferrer'
+            underline='none'
+            color='inherit'
+          >
+            <Tooltip
+              title="View More"
+              placement='left'
+              TransitionComponent={Zoom}
             >
-              <Tooltip
-                title="View More"
-                placement='left'
-                TransitionComponent={Zoom}
+              <IconButton
+                color='inherit'
+                aria-label="View More"
+                className={classes.iconButton}
               >
-                <IconButton
-                  color='inherit'
-                  aria-label="View More"
-                  className={classes.iconButton}
-                >
-                  <VisibilityOutlined className={classes.icon} />
-                </IconButton>
-              </Tooltip>
-            </Link>
+                <VisibilityOutlined className={classes.icon} />
+              </IconButton>
+            </Tooltip>
+          </Link>
         </div>
       </div>
     );
@@ -120,32 +126,44 @@ export const SpecificProjectPage = () => {
                 marginTop: "2vh",
                 height: "100%"
               }}>
-            <CardWrapper width="30vw" height="68.5vh">
+              <CardWrapper width="30vw" height="68.5vh">
                 <ImageDisplay caption={true} imgs={projectData.images} />
-            </CardWrapper>
+              </CardWrapper>
             </div>
           </div>
         </Container>
         <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
-          <div className={style.title}>
-              <Typography variant="h2" component="h1" gutterBottom>
-                {projectData.title}
-              </Typography>
+          <div className={style.catHolder + " " + style.fade}
+            style={{
+              marginBottom: "3vh",
+              top: "0",
+              zIndex: "999"
+            }}>
+            <CardWrapper width="40vw" blur="none">
+              <div style={{
+                marginTop: "1.5vh",
+                textAlign: "center"
+              }}>
+                <Typography variant="h2" component="h1" gutterBottom>
+                  {projectData.title}
+                </Typography>
+              </div>
+            </CardWrapper>
           </div>
           <div className={style.date}>
-          <Typography style = {{
-            marginTop: "-2vh",
-          }} variant="h6" component="h2" gutterBottom>
+            <Typography style={{
+              marginTop: "-2vh",
+            }} variant="h6" component="h2" gutterBottom>
               <TextDecrypt space={true} text={`${projectData.dates}`} />
-          </Typography>
+            </Typography>
           </div>
           <div className={classes.space}>
             <Spacing />
           </div>
           <div className={classes.text}>
-          <Markdown>
-            {projectData.summary}
-          </Markdown>
+            <Markdown>
+              {projectData.summary}
+            </Markdown>
           </div>
           <div className={`${classes.iconPos}`}>
             {nav}
