@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typography, Container, Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
@@ -11,16 +11,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "14vh",
     marginBottom: "0.5vh",
     marginLeft: "10vw",
+    marginRight: "10vw",
     "@media (max-width: 768px)": {
       marginLeft: theme.spacing(4),
     },
   },
   rightSide: {
     marginTop: "14vh",
-    marginLeft: "-36vw",
-    "@media (max-width: 768px)": {
-      marginLeft: theme.spacing(4),
-    },
+    marginLeft: "-22vw",
   },
   flex: {
     display: "flex",
@@ -58,7 +56,7 @@ function create_section() {
   for (const [key, value] of Object.entries(Resume.projects.sections)) {
     var currentProject = value;
     projs.push(
-      <div key={key} className={style.spacer}>
+      <div key={key} id={key.toLowerCase()} className={style.spacer}>
         <Link
           href={`/portfolio/projects/${key}`}
           key={key}
@@ -66,7 +64,7 @@ function create_section() {
           underline='none'
           color='inherit'
         >
-          <ProjectCard width="40.5vw" height="38vh" pName={key} data={currentProject} />
+          <ProjectCard width="36.5vw" height="38vh" pName={key} data={currentProject} />
         </Link>
       </div>
     );
@@ -90,6 +88,17 @@ sections.push(create_section());
 
 export const ProjectsHomePage = () => {
   const classes = useStyles();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+    const href = window.location.href.substring(
+      window.location.href.lastIndexOf('#') + 1,
+    );
+    if (window.location.href.lastIndexOf('#') > 0) {
+      document.getElementById(href)?.scrollIntoView();
+    }
+   });
 
   return (
     <>

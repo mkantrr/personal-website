@@ -7,8 +7,8 @@ import { BusinessCard } from '../content/BusCardButton';
 const useStyles = makeStyles((theme) => ({
   footerText: {
     position: 'absolute',
-    bottom: theme.spacing(6),
-    left: theme.spacing(6),
+    bottom: theme.spacing(1),
+    left: theme.spacing(2),
     '&:hover': {
       color: theme.palette.primary.main,
     },

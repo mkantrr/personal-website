@@ -12,16 +12,14 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20vh",
     marginBottom: "0.5vh",
     marginLeft: "10vw",
+    marginRight: "10vw",
     "@media (max-width: 768px)": {
       marginLeft: theme.spacing(4),
     },
   },
   rightSide: {
     marginTop: "14vh",
-    marginLeft: "-25vw",
-    "@media (max-width: 768px)": {
-      marginLeft: theme.spacing(4),
-    },
+    marginLeft: "-20vw",
   },
   flex: {
     display: "flex",
@@ -66,7 +64,7 @@ function create_section(data, name) {
     <div key={name}>
       <div id={name.toLowerCase()} className={style.catHolder + " " + style.fade}
            style={{position: "sticky", top: "0", zIndex: "999"}}>
-        <CardWrapper width="98.2%" blur="none">
+        <CardWrapper width="35.6vw" blur="none">
           <div style={{
             textAlign: "center"
           }}>
@@ -77,7 +75,10 @@ function create_section(data, name) {
         </CardWrapper>
       </div>
       <div className={style.proHolder}>
-        <div className={style.gridOrFlex + " moreCardGap"}>
+        <div className={style.gridOrFlex + " moreCardGap"}
+             style={{
+              marginLeft: "0.2vw"
+             }}>
           {cards}
         </div>
       </div>

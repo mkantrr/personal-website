@@ -24,7 +24,7 @@ const CareerCard = (props) => {
           <div className={style.imHolder}>{imDisp}</div>
         </div>
         <div className={style.topCont}>
-          <LRText leftText={value.dates} />
+          <LRText decrypt={true} leftText={value.dates} />
           <Typography variant="h6" component="h1" className={style.title}>
             {value.title}
           </Typography>
