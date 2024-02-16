@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import ProjectCard from "../cards/ProjectCard";
 import Resume from "../../settings/resume.json";
-import style from "./projects.css";
+import style from "./Projects.module.css";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -75,11 +75,9 @@ function create_section() {
   }
 
     return (
-        <div className={style.proHolder}>
-          <div className={style.gridOrFlex + " moreCardGap"}>
+        <>
             {projs}
-          </div>
-        </div>
+        </>
     );
 }
 

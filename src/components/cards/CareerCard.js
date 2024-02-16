@@ -31,7 +31,7 @@ const CareerCard = (props) => {
         </div>
       </div>
       <div className={style.content}>
-        <Markdown>{value.description}</Markdown>
+        <Markdown linkTarget="_blank">{value.description}</Markdown>
       </div>
     </CardWrapper>
   );

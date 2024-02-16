@@ -6,6 +6,7 @@ import { TextDecrypt } from "./TextDecrypt";
 import CardWrapper from "../cards/CardWrapper";
 import ImageDisplay from "../cards/ImageDisplay";
 import Resume from "../../settings/resume.json";
+import style from "./Citations.module.css"
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 export const Citations = () => {
     const classes = useStyles();
    
-    
+
   return (
     <>
       <div className={`${classes.flex}`}>
@@ -40,10 +41,12 @@ export const Citations = () => {
             <TextDecrypt text="Credits" />
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            <Markdown>{`${Resume.credits.description}`}</Markdown>
+            <Markdown linkTarget="_blank" className={style.links}>
+              {`${Resume.credits.description}`}
+            </Markdown>
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            <Markdown>
+            <Markdown linkTarget="_blank" className={style.links}>
               {`${Resume.credits.special_thanks}`}
             </Markdown>
           </Typography>
@@ -55,5 +58,5 @@ export const Citations = () => {
         </Container>
       </div>
     </>
-    );
+  );
 };

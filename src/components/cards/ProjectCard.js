@@ -50,8 +50,8 @@ const ProjectCard = (props) => {
                 {projectData.title}
               </Typography>
             </div>
-            <div className={style.main}>
-              <Markdown>
+            <div className={style.main + " " + style.links}>
+              <Markdown linkTarget="_blank">
                 {projectData.tagline ? projectData.tagline : (projectData.summary.split(".")[0] + ".")}
               </Markdown>
             </div>

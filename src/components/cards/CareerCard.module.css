@@ -28,6 +28,24 @@
     margin: 0px 20px;
 }
 
-.content > p > a {
-    color: var(--grey)
+.content ul li a {
+    color: #c617fb;
+    text-decoration: none;
+}
+
+.content ul li a:hover {
+    color: #d560f8;
+    text-decoration: line;
+    text-decoration-line: underline;
+}
+
+.content a {
+    color: #c617fb;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #d560f8;
+    text-decoration: line;
+    text-decoration-line: underline;
 }

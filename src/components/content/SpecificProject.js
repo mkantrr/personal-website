@@ -5,7 +5,7 @@ import { VisibilityOutlined } from '@material-ui/icons';
 import { TextDecrypt } from "./TextDecrypt";
 import { useParams } from "react-router-dom";
 import Markdown from "react-markdown";
-import style from "./specificproject.css";
+import style from "./SpecificProject.module.css";
 import ImageDisplay from "../cards/ImageDisplay";
 import CardWrapper from "../cards/CardWrapper";
 import Resume from "../../settings/resume.json"
@@ -58,8 +58,8 @@ const useStyles = makeStyles((theme) => ({
   text: {
     position: "fixed",
     wordWrap: "break-word",
-    width: "45vw",
-    height: "52vh",
+    width: "38vw",
+    height: "48vh",
     overflow: "auto",
     marginLeft: "0.5vw"
   }
@@ -75,13 +75,10 @@ export const SpecificProjectPage = () => {
   const classes = useStyles();
   let { projectId } = useParams();
   const projectData = Resume.projects.sections[projectId];
-  console.log(projectData);
 
   let nav = <hr></hr>;
   if (projectData.url) {
     nav = (
-      <div className={style.mHolder}>
-        <div className={style.cHolder}>
           <Link
             href={projectData.url}
             key={projectId}
@@ -104,8 +101,6 @@ export const SpecificProjectPage = () => {
               </IconButton>
             </Tooltip>
           </Link>
-        </div>
-      </div>
     );
   }
 
@@ -133,7 +128,7 @@ export const SpecificProjectPage = () => {
           </div>
         </Container>
         <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
-          <div className={style.catHolder + " " + style.fade}
+          <div
             style={{
               marginBottom: "3vh",
               top: "0",
@@ -150,21 +145,19 @@ export const SpecificProjectPage = () => {
               </div>
             </CardWrapper>
           </div>
-          <div className={style.date}>
             <Typography style={{
               marginTop: "-2vh",
             }} variant="h6" component="h2" gutterBottom>
               <TextDecrypt space={true} text={`${projectData.dates}`} />
             </Typography>
-          </div>
-          <div className={classes.space}>
             <Spacing />
-          </div>
+          <CardWrapper linkColor={style.links} hover="none" width="40.2vw" height="48vh">
           <div className={classes.text}>
-            <Markdown>
+            <Markdown linkTarget="_blank">
               {projectData.summary}
             </Markdown>
           </div>
+          </CardWrapper>
           <div className={`${classes.iconPos}`}>
             {nav}
           </div>

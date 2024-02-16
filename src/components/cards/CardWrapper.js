@@ -16,7 +16,7 @@ const CardWrapper = (props) => {
 
   return (
     <div
-      className={cls + " card_wrapper"}
+      className={props.linkColor + " " + cls + " card_wrapper"}
       style={{ height: height, width: width, maxWidth: maxWidth }}
       onClick={props.onClick}
     >

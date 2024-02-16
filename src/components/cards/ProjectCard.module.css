@@ -43,6 +43,28 @@
   justify-content: right;
 }
 
+.links ul li a {
+  color: #c617fb;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  color: #d560f8;
+  text-decoration: line;
+  text-decoration-line: underline;
+}
+
+.links a {
+  color: #c617fb;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #d560f8;
+  text-decoration: line;
+  text-decoration-line: underline;
+}
+
 .lr {
   grid-area: header;
 }

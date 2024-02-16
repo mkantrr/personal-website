@@ -16,7 +16,7 @@ Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [Jolein Hoop](h
 
 ## Features
 
--   Most, if not all of the personal information is populated from the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file following the [JSON Resume](https://jsonresume.org/) standard (to a point), a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/).
+-   Most, if not all of the personal information is populated from the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file following some sort of JSON structure based on [JSON Resume](https://jsonresume.org/) standard (to a point), a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/). The `resume.json` file has very similar fields to ones you might get from downloading your LinkedIn profile in this format, however it is not plug and play.
 -   The toggle/switch for the dark mode syncs its state to the browser's local storage.
 
 ## Customization

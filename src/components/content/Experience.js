@@ -5,7 +5,6 @@ import { TextDecrypt } from "./TextDecrypt";
 import CardWrapper from "../cards/CardWrapper";
 import CareerCard from "../cards/CareerCard";
 import Resume from "../../settings/resume.json";
-import style from "./experience.css";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -56,31 +55,31 @@ function create_section(data, name) {
       </>
     );
   }
+
   for (let i = 0; i < 3; i++) {
-    cards.push(<Spacing />)
+    cards.push(<Spacing />);
   }
 
   return (
     <div key={name}>
-      <div id={name.toLowerCase()} className={style.catHolder + " " + style.fade}
-           style={{position: "sticky", top: "0", zIndex: "999"}}>
+      <div id={name.toLowerCase()}
+        style={{ position: "sticky", top: "0", zIndex: "999" }}>
         <CardWrapper width="35.6vw" blur="none">
           <div style={{
             textAlign: "center"
           }}>
-          <Typography variant="h5" component="h2" className={style.linksTitle}>
-            <TextDecrypt text={name} />
-          </Typography>
+            <Typography variant="h5" component="h2">
+              <TextDecrypt text={name} />
+            </Typography>
           </div>
         </CardWrapper>
       </div>
-      <div className={style.proHolder}>
-        <div className={style.gridOrFlex + " moreCardGap"}
-             style={{
-              marginLeft: "0.2vw"
-             }}>
-          {cards}
-        </div>
+      <Spacing />
+      <div
+        style={{
+          marginLeft: "0.2vw"
+        }}>
+        {cards}
       </div>
     </div>
   );
