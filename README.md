@@ -7,17 +7,20 @@
 
 My personal website source code. View it at [matutu.dev](https://matutu.dev)
 
--   built using [React](https://reactjs.org/)
+-   built using [**React**](https://reactjs.org/)
 -   bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
--   styled with [Material-UI](https://material-ui.com/)
--   hosted at [matutu.dev](https://matutu.dev)
+-   styled with [**Material-UI**](https://material-ui.com/)
+-   hosted at [**matutu.dev**](https://matutu.dev)
 
 Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [Jolein Hoop](https://github.com/JoHoop) for the inspiration. And of course my good friend [Eric Knocklein](https://github.com/EricKnocklein/) for his generous help with resuable card components.
 
 ## Features
 
--   Most, if not all of the personal information is populated from the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file following some sort of JSON structure based on [JSON Resume](https://jsonresume.org/) standard (to a point), a community driven open source initiative to create a JSON based standard for resumes. Discover the official schema [here](https://jsonresume.org/schema/). The `resume.json` file has very similar fields to ones you might get from downloading your LinkedIn profile in this format, however it is not plug and play.
+-   The [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file has very similar fields to ones you might get from downloading your LinkedIn profile in a [JSON Resume](https://jsonresume.org/schema) schema standard, however it is not plug and play. Because of this you may use the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file as a template if you would like to adapt your information and experiences to this website's structure.
 -   The toggle/switch for the dark mode syncs its state to the browser's local storage.
+-   The website hosts a variety of redirects for my social media pages, for specific routing links available through **React**.
+-   The portfolio page is somewhat of a subsystem of the website, with it's own navigation within it. This is to compartmentalize the "portfolio" concept, and allow for further scalability to other website systems.
+-   For now, does not look very good on mobile browsers/screens. WIP.
 
 ## Customization
 
