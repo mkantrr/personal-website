@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     wordWrap: "break-word",
     width: "38vw",
-    height: "48vh",
+    height: "100%",
     overflow: "auto",
     marginLeft: "0.5vw"
   }
@@ -137,9 +137,9 @@ export const SpecificProjectPage = () => {
             <CardWrapper width="40vw" blur="none">
               <div style={{
                 marginTop: "1.5vh",
-                textAlign: "center"
+                textAlign: "center",
               }}>
-                <Typography variant="h2" component="h1" gutterBottom>
+                <Typography variant="h5" component="h2" gutterBottom>
                   {projectData.title}
                 </Typography>
               </div>
@@ -151,7 +151,7 @@ export const SpecificProjectPage = () => {
               <TextDecrypt space={true} text={`${projectData.dates}`} />
             </Typography>
             <Spacing />
-          <CardWrapper linkColor={style.links} hover="none" width="40.2vw" height="48vh">
+          <CardWrapper linkColor={style.links} hover="none" width="40.2vw" height="31rem">
           <div className={classes.text}>
             <Markdown linkTarget="_blank">
               {projectData.summary}
