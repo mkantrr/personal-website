@@ -1,0 +1,169 @@
+{
+  "basics": {
+    "name": "Matthew Kanter",
+    "label": "Computer Scientist",
+    "email": "matt@matutu.dev",
+    "phone": "(757)621-1258",
+    "picture": "headshot-min.png",
+    "x_title": "Hi! I'm",
+    "job": "Computer Scientist",
+    "description": "Hi! I'm Matthew Kanter, a Computer Scientist with a passion for developing a mindset of a lifelong learner. I love all things computerized. Talk soon!",
+    "summary": "based in Fredericksburg, Virginia",
+    "keywords": "matt,matthew,kanter,matthewkanter,computer,science,fredericksburg,virginiabeach,virginia,unitedstates,personal,website,portfolio,template,kit,react,github,linkedin,google,gitlab,material,design,ui,webapp",
+    "url": "https://matutu.dev",
+    "location": {
+      "city": "",
+      "country": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Resume",
+        "username": "Resume",
+        "url": "/resume.pdf",
+        "x_icon": "fas fa-file-pdf"
+      }
+    ],
+    "menuIcons": [
+      {
+        "network": "Career",
+        "username": "Career",
+        "url": "/portfolio/career",
+        "x_icon": "fas fa-briefcase"
+      },
+      {
+        "network": "Projects",
+        "username": "Projects",
+        "url": "/portfolio/projects",
+        "x_icon": "fas fa-lightbulb"
+      },
+      {
+        "network": "Credits",
+        "username": "Credits",
+        "url": "/portfolio/credits",
+        "x_icon": "fas fa-external-link-alt"
+      }
+    ]
+  },
+  "volunteer": [],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Technical Industry Entrepreneurship Internship",
+      "issuer": "George Mason University",
+      "startDate": "2023-03-31",
+      "url": "https://www.credly.com/badges/cb09d51a-32a0-4cca-81f5-0e0dd215c64e/linked_in_profile"
+    }
+  ],
+  "about": {
+    "images": [
+      {
+        "src": "/img/profile/about1.jpg",
+        "alt": "Professional headshot of Matthew",
+        "caption": "Professional Headshot taken at UMW."
+      },
+      {
+        "src": "/img/profile/about2.jpg",
+        "alt": "Matthew's cat laying on his chest",
+        "caption": "My cat Nolan and I :)"
+      },
+      {
+        "src": "/img/profile/about3.jpg",
+        "alt": "A selfie of Matthew's girlfriend and himself",
+        "caption": "My girlfriend Reese and I <3"
+      },
+      {
+        "src": "/img/profile/about4.jpg",
+        "alt": "Matthew and his friends in a South African grassy field",
+        "caption": "My friends and I on a South African bush hike."
+      },
+      {
+        "src": "/img/profile/about5.jpg",
+        "alt": "Matthew's cat laying in the sand at the beach",
+        "caption": "Nolan at the beach!"
+      }
+    ],
+    "description": "I’m Matthew Kanter, a Computer Scientist and recent graduate of the University of Mary Washington (UMW). In all of the facets of my life, I have strived to be the best I can be to the best of my ability. This has led me to value my aptitude for learning throughout my life as one of the most important parts of my reality. I invite you to explore this website to learn about my learning."
+  },
+  "career": {
+    "overview": "My journey with software development and computer science started with an AP Computer Science course I took in high school. It became very clear to me very quickly the art of programming fit like a puzzle piece into how I problem solve. Since then, I have sought out experiences to further explore computer science and my love for it has only grown.",
+    "snippet": "By clicking on the icon below, you can see my full resume, or alternatively explore this page for more information.",
+    "resume": "/resume.pdf",
+    "sections": {
+      "Experience": {
+        "position1": {
+          "title": "Student Aid Programmer at UMW",
+          "dates": "September 2022 - May 2024",
+          "description": "For a majority of my time at UMW I provided my assistance and expertise to UMW's Enterprise Application Services department, who manages UMW's internal databases and provides statistical analytics and internal information to UMW's other internal departments for further administrative use. In becoming an indispensable student aid, I:\n- Wrote **PL/SQL** queries and **Power BI** paginated reports.\n- Completed, documented, and tested tickets through the **Agile JIRA** workflow management system.\n - Provided other miscellaneous technological solutions, such as training new student aides and configuring settings in connecting to **Oracle** and **MySQL** databases.\n\nThis experience also provided me valuable in-person workplace experience, and allowed me to gain experience in explaining highly technical and complex problems such as run-time boundaries or specific **SQL** language issues to career experts.",
+          "images": [
+            {
+              "src": "/img/career/umw.png",
+              "alt": "UMW logo"
+            }
+          ]
+        }
+      },
+      "Education": {
+        "undergrad": {
+          "title": "University of Mary Washington",
+          "dates": "",
+          "description": "",
+          "images": [
+            {
+              "src": "/img/career/umw.png",
+              "alt": "University of Mary Washington logo"
+            }
+          ]
+        },
+        "high-school": {
+          "title": "Frank W. Cox High School",
+          "dates": "",
+          "description": "",
+          "images": [
+            {
+              "src": "/img/career/cox_falcon.png",
+              "alt": "Frank W. Cox High School logo"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "projects": {
+    "overview": "This page hosts a portion of my projects I have completed, or I am completing. I believe these projects show my high aptitude for learning and my mindset geared toward a good work ethic and passionate work, as well as my current comprehension of the knowledge I currently possess. If you have more interest in my practical work experience or educational credentials, I invite you to navigate to my career page.",
+    "snippet": "If you would like to see my code specific repositories that I have source code for that I am able to host on my personal account, click the icon below.",
+    "sections": {
+      "personal_website": {
+        "title": "Personal Website",
+        "dates": "Ongoing",
+        "tagline": "This website is a domain hosted **React** application to advertise my capabilities as a software developer and to explore new front-end web development technologies.",
+        "summary": "I built this portfolio website you are currently viewing with **React**. This website was originally a fork of [**Jolien Hoop**](https://jolienhoop.com)'s website but has been vastly improved and changed to reflect my personal needs in a personal website. Most overall styling was preserved from the fork, however there is plenty of tweaks I made for component positions or otherwise. In a similar vein, all styling for the translucent cards with content originates from my good friend [**Eric Knocklein**](https://ericknock.netlify.app)'s website and of course with some tweaks of my own. Page styling in general is all custom built with these reusable components and with my needs in mind. Most of my practical work experience has been in front-end **JavaScript** development, so this website is a continuation and representation of my current skills and abilities as a software engineer both in design and in content. This website, like Eric's, is also built to be modular such that anyone can adapt the source code for this website to their own tailored needs (given they appreciate the same type of styling and JSON data imports for only front-end information).\n\nAll the data that builds the website is stored in one **JSON** file, called `resume.json` that are interpreted and displayed as you see them now. Even this page of text is stored within a JSON object's property/field. This type of data manipulation allows this website to be almost completely modular. The process of creating this website has been a continuing learning experience with React. Having prior experience developing within a React framework, developing this website gave me a broader understanding of a React web app's structure and code flow.\n\nSimilar to Eric's descrption of his website, I can confidently say this website utilizes a sort of Model View Controller (MVC) architecture/pattern, where the index page handles all routing/requests as the controller, each page is a template for data (so it classifies as a view), and the data rendered from the JSON file is the model being rendered.\n\nThis project isn't the my first rodeo with web development styling; refer to my [**volleyball website**](/portfolio/projects/volleyball_website) I developed for my Applications of Databases class at UMW that was coded in PHP and uses a MySQL (MariaDB) back-end.\n\nI hope to keep this site up to date and add more flare to it as my career and life continues. I have many ideas for continuations to this site, such as a blog or making this much more mobile screen accessible. For the time being though, I am extremely excited with how much I was able to accomplish with this website in its current state and will proudly advertise it as an extension of myself.",
+        "url": "/",
+        "images": [
+          {
+            "src": "/img/projects/matt.svg",
+            "alt": "Matthew's logo",
+            "caption": ""
+          }
+        ]
+      } 
+    }
+  },
+  "credits": {
+    "description": "A very big thank you to [Jolien Hoop](https://jolienhoop.com/) who partially inspired the UI design of this website, and [Cody Bennett](https://codyb.co/) for his **Three.js** work which inspired the background physics sphere featured on this page.",
+    "special_thanks": "A very special thanks to my close friend [Eric Knocklein](https://ericknock.netlify.app/) for the reusable card components found throughout this app as well as a lot of the **CSS** styling.",
+    "images": [
+      {
+        "src": "/img/credits/hands.png",
+        "alt": "Helping hands raising up in the air.",
+        "caption": ""
+      }
+    ]
+  },
+  "references": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
