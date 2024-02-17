@@ -29,24 +29,24 @@ export const App = () => {
                     <Route path='/portfolio/credits' component={Credits} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path='/credits' component={Credits} />
-                    <Route path="/" exact component={Home} />
                     <Route path="/github" component={() =>{
                         window.location.href = "https://github.com/mkantrr";
                         return null;
                     }} />
-                    <Route path="/linkedin" component={() =>{
+                    <Route path="/linkedin" component={() => {
                         window.location.href = "https://linkedin.com/in/mkanter124";
                         return null;
                     }} />
-                    <Route path="/resume" component={() =>{
+                    <Route path="/resume" component={() => {
                         window.location.href = "/resume.pdf";
                         return null;
                     }} />
-                    <Route path="/email" component={() =>{
-                        window.location.href = "mailto:matt@matutu.dev";
+                    <Route path="/discord" component={() => {
+                        window.location.href = "https://discord.com/users/204980290609872896"
                         return null;
                     }} />
                     <Route path="/*" component={PageNotFound} />
+                    <Route path="/" exact component={Home} />
                 </Switch>
             </Router>
         </ThemeProvider>
