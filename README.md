@@ -12,7 +12,7 @@ My personal website source code. View it at [matutu.dev](https://matutu.dev)
 -   styled with [**Material-UI**](https://material-ui.com/)
 -   hosted at [**matutu.dev**](https://matutu.dev)
 
-Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [Jolein Hoop](https://github.com/JoHoop) for the inspiration. And of course my good friend [Eric Knocklein](https://github.com/EricKnocklein/) for his generous help with resuable card components.
+Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [Jo Lienhoop](https://github.com/JoHoop) for the inspiration. And of course my good friend [Eric Knocklein](https://github.com/EricKnocklein/) for his generous help with resuable card components.
 
 ## Features
 
