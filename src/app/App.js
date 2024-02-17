@@ -45,8 +45,8 @@ export const App = () => {
                         window.location.href = "https://discord.com/users/204980290609872896"
                         return null;
                     }} />
-                    <Route path="/*" component={PageNotFound} />
                     <Route path="/" exact component={Home} />
+                    <Route path="/*" component={PageNotFound} />
                 </Switch>
             </Router>
         </ThemeProvider>
