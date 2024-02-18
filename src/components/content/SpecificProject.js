@@ -113,7 +113,7 @@ export const SpecificProjectPage = () => {
               position: "fixed",
               width: "60%",
               height: "75%",
-              overflow: "auto"
+              overflow: "hidden"
             }}>
             <div
               style={{
