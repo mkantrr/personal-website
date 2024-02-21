@@ -36,22 +36,22 @@ export const Citations = () => {
   return (
     <>
       <div className={`${classes.flex}`}>
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+        <Container component="main" className={classes.main} maxWidth="sm">
           <Typography variant="h2" component="h1" gutterBottom>
             <TextDecrypt text="Credits" />
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
             <Markdown linkTarget="_blank" className={style.links}>
-              {`${Resume.credits.description}`}
+              {Resume.credits.description}
             </Markdown>
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
             <Markdown linkTarget="_blank" className={style.links}>
-              {`${Resume.credits.special_thanks}`}
+              {Resume.credits.special_thanks}
             </Markdown>
           </Typography>
         </Container>
-        <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
+        <Container component="main" className={classes.rightSide} maxWidth="sm">
           <CardWrapper hover="none" width="36.5vw" height="68vh">
             <ImageDisplay imgs={Resume.credits.images} />
           </CardWrapper>

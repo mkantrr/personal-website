@@ -17,7 +17,7 @@ export const Error = () => {
     const classes = useStyles();
 
     return (
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+        <Container component="main" className={classes.main} maxWidth="sm">
             <Typography variant="h2" component="h1" gutterBottom>
                 <TextDecrypt text="Error 404"/>
             </Typography>

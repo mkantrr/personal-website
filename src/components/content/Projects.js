@@ -100,18 +100,18 @@ export const ProjectsHomePage = () => {
 
   return (
     <>
-      <div className={`${classes.flex}`}>
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+      <div className={classes.flex}>
+        <Container component="main" className={classes.main} maxWidth="sm">
           <Typography variant="h2" component="h1" gutterBottom>
             <TextDecrypt text="Projects" />
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            {`${Resume.projects.overview}`}
+            {Resume.projects.overview}
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            {`${Resume.projects.snippet}`}
+            {Resume.projects.snippet}
           </Typography>
-          <div className={`${classes.iconPos}`}>
+          <div className={classes.iconPos}>
             <Link
               href={Resume.basics.profiles[3].url}
               key={Resume.basics.profiles[3].network.toLowerCase()}
@@ -136,7 +136,7 @@ export const ProjectsHomePage = () => {
             </Link>
           </div>
         </Container>
-        <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
+        <Container component="main" className={classes.rightSide} maxWidth="sm">
           <div
             style={{
               position: "fixed",

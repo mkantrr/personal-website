@@ -33,16 +33,16 @@ export const WelcomePage = () => {
     
   return (
     <>
-      <div className={`${classes.flex}`}>
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+      <div className={classes.flex}>
+        <Container component="main" className={classes.main} maxWidth="sm">
           <Typography variant="h2" component="h1" gutterBottom>
             <TextDecrypt text="Welcome!" />
           </Typography>
           <Typography variant="h6" component="h2" gutterBottom>
-            {`${Resume.about.description}`}
+            {Resume.about.description}
           </Typography>
         </Container>
-        <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
+        <Container component="main" className={classes.rightSide} maxWidth="sm">
           <CardWrapper width="36.5vw" height="68vh">
             <ImageDisplay caption={true} imgs={Resume.about.images} />
           </CardWrapper>

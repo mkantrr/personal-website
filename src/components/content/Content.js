@@ -19,7 +19,7 @@ export const Content = () => {
     const classes = useStyles();
 
     return (
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+        <Container component="main" className={classes.main} maxWidth="sm">
             <Typography variant="h2" component="h1" gutterBottom>
                 <TextDecrypt text={`${Resume.basics.x_title} ${FirstName}`} />
             </Typography>

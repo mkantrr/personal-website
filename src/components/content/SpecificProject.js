@@ -107,7 +107,7 @@ export const SpecificProjectPage = () => {
   return (
     <>
       <div className={`${classes.flex}`}>
-        <Container component="main" className={`${classes.main}`} maxWidth="sm">
+        <Container component="main" className={classes.main} maxWidth="sm">
           <div
             style={{
               position: "fixed",
@@ -127,7 +127,7 @@ export const SpecificProjectPage = () => {
             </div>
           </div>
         </Container>
-        <Container component="main" className={`${classes.rightSide}`} maxWidth="sm">
+        <Container component="main" className={classes.rightSide} maxWidth="sm">
           <div
             style={{
               marginBottom: "3vh",
@@ -148,7 +148,7 @@ export const SpecificProjectPage = () => {
             <Typography style={{
               marginTop: "-2vh",
             }} variant="h6" component="h2" gutterBottom>
-              <TextDecrypt space={true} text={`${projectData.dates}`} />
+              <TextDecrypt space={true} text={projectData.dates} />
             </Typography>
             <Spacing />
           <CardWrapper linkColor={style.links} hover="none" width="40.2vw" height="31rem">
@@ -158,7 +158,7 @@ export const SpecificProjectPage = () => {
             </Markdown>
           </div>
           </CardWrapper>
-          <div className={`${classes.iconPos}`}>
+          <div className={classes.iconPos}>
             {nav}
           </div>
         </Container>
