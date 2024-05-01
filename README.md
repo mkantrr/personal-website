@@ -3,7 +3,7 @@
 [![Screenshot](/public/social-image.png?raw=true)](https://matutu.dev)
 
 [![Website matutu.dev](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://matutu.dev)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mkantrr/personal-website/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mkantrr/portfolio-website/blob/master/LICENSE)
 
 My personal website source code. View it at [matutu.dev](https://matutu.dev)
 
@@ -16,7 +16,7 @@ Kudos to [Cody Bennett](https://github.com/CodyJasonBennett) and [Jo Lienhoop](h
 
 ## Features
 
--   The [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file has very similar fields to ones you might get from downloading your LinkedIn profile in a [JSON Resume](https://jsonresume.org/schema) schema standard, however it is not plug and play. Because of this you may use the [`resume.json`](https://github.com/mkantrr/personal-website/blob/master/src/settings/resume.json) file as a template if you would like to adapt your information and experiences to this website's structure.
+-   The [`resume.json`](https://github.com/mkantrr/portfolio-website/blob/master/src/settings/resume.json) file has very similar fields to ones you might get from downloading your LinkedIn profile in a [JSON Resume](https://jsonresume.org/schema) schema standard, however it is not plug and play. Because of this you may use the [`resume.json`](https://github.com/mkantrr/portfolio-website/blob/master/src/settings/resume.json) file as a template if you would like to adapt your information and experiences to this website's structure.
 -   The toggle/switch for the dark mode syncs its state to the browser's local storage.
 -   The website hosts a variety of redirects for my social media pages, for specific routing links available through **React**.
 -   The portfolio page is somewhat of a subsystem of the website, with it's own navigation within it. This is to compartmentalize the "portfolio" concept, and allow for further scalability to other website systems.

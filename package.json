@@ -1,9 +1,9 @@
 {
-    "name": "personal-website",
+    "name": "portfolio-website",
     "version": "1.0",
     "homepage": "https://matutu.dev",
     "description": "This is Matthew Kanter's personal website.",
-    "repository": "https://github.com/mkantrr/personal-website",
+    "repository": "https://github.com/mkantrr/portfolio-website",
     "author": {
         "name": "Matthew Kanter",
         "email": "matt@matutu.dev",
